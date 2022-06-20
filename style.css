@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Space Mono', monospace; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.layout {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 30px 77px 0;
+  flex: 1 1 auto;
+}
+
+header h1 {
+  display: block;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 1.5em;
+  color: #333333;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+main .righ-main {
+  width: 50%;
+  margin-bottom: 2em;
+}
+main .righ-main img {
+  width: 100%;
+}
+main .left-main {
+  width: 50%;
+  font-family: 'Space Mono';
+  margin-bottom: 2em;
+}
+main .left-main h1 {
+  font-size: 4vw;
+  columns: #333333;
+  margin-bottom: 36px;
+}
+main .left-main p {
+  width: 60%;
+  font-size: 1.5vw;
+  line-height: 1.5em;
+  color: #4f4f4f;
+  margin-bottom: 5vh;
+}
+main .left-main button {
+  all: unset;
+  border: 1px solid #333333;
+  padding: 2vh 3vw;
+  font-size: 1.5vw;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .righ-main {
+    width: 100%;
+  }
+  main .left-main p {
+    font-size: 2vw;
+  }
+  main .left-main button {
+    font-size: 2vw;
+  }
+}
