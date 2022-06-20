@@ -73,8 +73,13 @@ main .left-main button {
   main .righ-main {
     width: 100%;
   }
+  main .left-main {
+    width: 100%;
+    text-align: center;
+  }
   main .left-main p {
-    font-size: 2vw;
+    width: 100%;
+    font-size: 3vw;
   }
   main .left-main button {
     font-size: 2vw;
